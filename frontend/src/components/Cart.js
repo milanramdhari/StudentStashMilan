@@ -1,31 +1,12 @@
+import { useContext, useState } from "react";
 import Navbar from "./Navbar";
-import { useState } from "react";
+import { CartContext } from "../contexts/CartContext";
 
 export default function Cart() {
-    const [cartItems, setCartItems] = useState([
-        {
-            id: 1,
-            name: "Product 1",
-            price: 29.99,
-            quantity: 2,
-            imageUrl: "https://via.placeholder.com/150"
-        },
-        {
-            id: 2,
-            name: "Product 2",
-            price: 49.99,
-            quantity: 1,
-            imageUrl: "https://via.placeholder.com/150"
-        },
-        {
-            id: 3,
-            name: "Product 3",
-            price: 19.99,
-            quantity: 3,
-            imageUrl: "https://via.placeholder.com/150"
-        }
-    ]);
 
+    const {cartItems, setCartItems, totalPrice} = useContext(CartContext)
+
+    //the filter function creates a new arrya that contain items that do not match the given id
     const handleRemove = (id) => {
         setCartItems(cartItems.filter(item => item.id !== id));
     };
@@ -36,10 +17,10 @@ export default function Cart() {
         ));
     };
 
-    const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
     return (
         <>
+
             <Navbar />
 
             <div className="container mx-auto mt-10 px-4">
@@ -65,6 +46,7 @@ export default function Cart() {
                                         />
                                     </label>
                                 </div>
+                                <button className="btn btn-error mt-4 md:mt-0 md:ml-4">Contact</button>
                                 <button onClick={() => handleRemove(item.id)} className="btn btn-error mt-4 md:mt-0 md:ml-4">
                                     Remove
                                 </button>

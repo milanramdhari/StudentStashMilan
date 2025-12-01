@@ -1,51 +1,53 @@
 [
     {
-        "image": [
-            "https://example.com/image1-front.jpg",
-            "https://example.com/image1-back.jpg"
-        ],
+        "image": 
+            "iphone.jpg",
         "label": "Apple iPhone 13",
         "price": 799.99,
+        "priceFixed": true,
         "condition": "New",
-        "description": "The latest iPhone 13 with A15 Bionic chip, 128GB storage, and 6.1-inch Super Retina XDR display. Available in multiple colors."
+        "description": "The latest iPhone 13 with A15 Bionic chip, 128GB storage, and 6.1-inch Super Retina XDR display. Available in multiple colors.",
+        "available": true
+        
     },
     {
-        "image": [
-            "https://example.com/laptop-front.jpg",
-            "https://example.com/laptop-keyboard.jpg"
-        ],
+        "image": 
+            "dell.jpg",
         "label": "Dell XPS 13",
         "price": 999.99,
+        "priceFixed": false,
         "condition": "Used - Like New",
-        "description": "Dell XPS 13 with Intel i7 processor, 16GB RAM, and 512GB SSD. Ultra-thin design, perfect for on-the-go productivity."
+        "description": "Dell XPS 13 with Intel i7 processor, 16GB RAM, and 512GB SSD. Ultra-thin design, perfect for on-the-go productivity.",
+        "available": true
     },
     {
-        "image": [
-            "https://example.com/headphones1.jpg"
-        ],
+        "image": 
+            "sony.jpg",
         "label": "Sony WH-1000XM4",
         "price": 349.99,
+        "priceFixed": true,
         "condition": "New",
-        "description": "Sony's industry-leading noise-cancelling headphones with up to 30 hours of battery life, touch sensor controls, and voice assistant compatibility."
+        "description": "Sony's industry-leading noise-cancelling headphones with up to 30 hours of battery life, touch sensor controls, and voice assistant compatibility.",
+        "available": true
     },
     {
-        "image": [
-            "https://example.com/backpack-front.jpg",
-            "https://example.com/backpack-side.jpg"
-        ],
+        "image": 
+            "backpack.jpg",
         "label": "Herschel Little America Backpack",
         "price": 89.99,
+        "priceFixed": true,
         "condition": "New",
-        "description": "Herschel's iconic backpack with a classic mountaineering style, featuring a spacious main compartment, padded laptop sleeve, and adjustable drawstring closure."
+        "description": "Herschel's iconic backpack with a classic mountaineering style, featuring a spacious main compartment, padded laptop sleeve, and adjustable drawstring closure.",
+        "available": true
     },
     {
-        "image": [
-            "https://example.com/book-front.jpg",
-            "https://example.com/book-back.jpg"
-        ],
+        "image": 
+            "book.jpg",
         "label": "The Catcher in the Rye by J.D. Salinger",
         "price": 10.99,
+        "priceFixed": false,
         "condition": "Used - Good",
-        "description": "A classic novel originally published in 1951, following the story of Holden Caulfield, a teenager navigating life in New York City."
+        "description": "A classic novel originally published in 1951, following the story of Holden Caulfield, a teenager navigating life in New York City.",
+        "available": true
     }
 ]
